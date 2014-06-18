@@ -9,15 +9,16 @@
             background-color: lightseagreen;
             color: lightgoldenrodyellow;
         }
-        section div{
+        #table{
             float: left;
             width:40%;
-            text-align: center;
+            text-align: left;
+            background-color: wheat;
         }
         section div p{
             text-align: left;
             padding: 5%;
-            margin: 0px;
+            /*margin: 0px;*/
         }
 
     </style>
@@ -33,16 +34,20 @@
 
 <img src="https://www.dropbox.com/s/rm2p26s2ahsf920/29017.jpg?dl=1" width="100" style="float: left">
 
-<section>
-    <div >Basic Info
-        <p>Name <input type="text"id="name"></p>
-        <p>Date of birth <input type="date"id="dob"></p>
-        <p>Skills <input type="text" id="sk"></p>
-        <p>Email <input type="email"id="email"></p>
-        <p>Linkedin Profile <input type="url"id="linkedin"></p>
-        <p>Date of joining<input type="date"id="doj"></p>
-        <p>Name <input type="number"id=""></p>
-    </div>
+<section id="table">
+    <form>
+        <table>
+        <tr>Basic Info
+            <td>Name </td><td><input type="text" id="name" ></td>
+            </tr><tr><td>Date of birth </td><td><input type="date"id="dob"></td>
+            </tr><tr><td>Skills </td><td><input type="text" id="sk"></td>
+            </tr><tr><td>Email </td><td><input type="email"id="email"></td>
+            </tr><tr><td>Linkedin Profile </td><td><input type="url"id="linkedin"></td>
+            </tr><tr><td>Date of joining</td><td><input type="date"id="doj"></td>
+            </tr><tr> <td>Duration </td><td><input type="number" id=""></td>
+        </tr>
+        </table>
+    </form>
 
     <div>Extended Info
     </div>
