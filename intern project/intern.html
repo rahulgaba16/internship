@@ -2,43 +2,32 @@
 <html>
 <head>
     <title>Intern Page</title>
-    <style>
-        #title{
-            font-size: 42px;
-            text-align: center;
-            background-color: lightseagreen;
-            color: lightgoldenrodyellow;
-        }
-        #table{
-            float: left;
-            width:40%;
-            text-align: left;
-            background-color: wheat;
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function logout()
+        {
+            document.getElementById();
+
         }
 
-        section div p{
-            text-align: left;
-            padding: 5%;
-            /*margin: 0px;*/
-        }
-
-    </style>
+    </script>
 </head>
 
 <body style="background-color: lightcyan;  font-family: 'trebuchet ms'">
 <header >
     <p style=" color: green; width: 90%; float: left">Welcome Intern</p>
-    <input type="button" value="Log out" style=" float: left; width: 10%">
+    <input type="button" onclick="logout()" value="Log out" style=" float: left; width: 10%">
     <br>
     <p id="title">Profile </p>
 </header>
 
-<img src="https://www.dropbox.com/s/rm2p26s2ahsf920/29017.jpg?dl=1" width="100" style="float: left">
 
-<section id="table">
-    <form>
+
+<section >
+    <form id="basic">
         <table>
         <tr>Basic Info
+            <img src="https://www.dropbox.com/s/rm2p26s2ahsf920/29017.jpg?dl=1" width="100 px" style="float: left">
             <td>Name </td><td><input type="text" id="name" ></td>
             </tr><tr><td>Date of birth </td><td><input type="date"id="dob"></td>
             </tr><tr><td>Skills </td><td><input type="text" id="sk"></td>
@@ -50,7 +39,15 @@
         </table>
     </form>
 
-    <div>Extended Info
+    <div id="extended">
+        <p>Extended Info</p>
+        <section id="graph">
+            <p> Performance Gr</p>
+        </section>
+        <form>
+            <br>GIT Repository: <input type="link" id="rep"> <br>
+            Department: <input type="text" id="dept">
+        </form>
     </div>
 
 </section>

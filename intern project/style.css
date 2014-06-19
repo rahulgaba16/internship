@@ -1,0 +1,38 @@
+#title{
+    font-size: 42px;
+    text-align: center;
+    background-color: lightseagreen;
+    color: lightgoldenrodyellow;
+}
+#basic{
+    float: left;
+    width:800px;
+    text-align: center;
+    background-color: wheat;
+    margin: 1px;
+    padding-left: 5px;
+    height: 400px;
+}
+
+#extended{
+    float: left;
+    text-align: center;
+    padding-left: 5px;
+    width: 402px;
+    margin-left: 10px;
+    height: 400px;
+    background-color: wheat;
+}
+#graph{
+    background-color: lightgoldenrodyellow;
+    width: 200px;
+    height: 200px;
+    vertical-position: normal;
+    /*float: right;*/
+    margin-right: 5px;
+}
+#extended form{
+    /*text-align: right;*/
+    /*float: right;*/
+    /*width: 400px;*/
+}
