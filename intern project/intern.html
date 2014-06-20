@@ -11,9 +11,13 @@
             switch (n)
             {
                 case "Web designing":
-                    document.getElementById("git").innerHTML="Enter your GIT Repository link: ";
-                    break;
+                    document.getElementById("web").style.visibility="visible";
+//                    document.getElementById("git").innerHTML="Enter your GIT Repository link: ";
 
+                    break;
+                default:
+                    document.getElementById("web").style.visibility="hidden";
+                    break;
             }
         }
 
@@ -33,17 +37,33 @@
 
 <section >
     <form id="basic">
+        Basic Info
         <table>
-        <tr>Basic Info
-            <img src="https://www.dropbox.com/s/rm2p26s2ahsf920/29017.jpg?dl=1">
+
+        <tr>
+            <td>
+                <img src="https://www.dropbox.com/s/rm2p26s2ahsf920/29017.jpg?dl=1">
+            </td>
             <td>Name </td><td><input type="text" id="name" ></td>
-            </tr><tr><td>Date of birth </td><td><input type="date"id="dob"></td>
-            </tr><tr><td>Skills </td><td><input type="text" id="sk"></td>
-            </tr><tr><td>Email </td><td><input type="email"id="email"></td>
-            </tr><tr><td>Linkedin Profile </td><td><input type="url"id="linkedin"></td>
-            </tr><tr><td>Date of joining</td><td><input type="date"id="doj"></td>
-            </tr><tr> <td>Duration </td><td><input type="number" id=""></td>
-        </tr>
+         </tr>
+            <tr><td>Date of birth </td><td><input type="date"id="dob"></td>
+            </tr>
+            <tr>
+                <td>Skills </td><td><input type="text" id="sk"></td>
+            </tr>
+            <tr>
+                <td>Email </td><td><input type="email"id="email"></td>
+            </tr>
+            <tr>
+                <td>Linkedin Profile </td><td><input type="url"id="linkedin"></td>
+            </tr>
+            <tr>
+                <td>Date of joining</td><td><input type="date"id="doj"></td>
+            </tr>
+            <tr>
+                <td>Duration </td><td><input type="number" id=""></td>
+            </tr>
+
         </table>
     </form>
 
@@ -61,9 +81,11 @@
                 <option>Sales</option>
                 <option>HR department</option>
             </select><br>
-            <p id="git"></p>
-            <input type="link" id="rep"> <br>
-            <input type="button" value="Submit">
+            <section id="web">
+                <p>Enter Your Repository :</p>
+                <input type="link" id="rep"> <br>
+                <input type="button" value="Submit">
+            </section>
         </form>
     </div>
 
