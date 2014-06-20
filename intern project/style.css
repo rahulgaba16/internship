@@ -4,6 +4,12 @@
     background-color: lightseagreen;
     color: lightgoldenrodyellow;
 }
+img{
+    width: 100px;
+    float: left;
+    margin-top: 5px;
+
+}
 #basic{
     float: left;
     width:800px;
@@ -32,7 +38,7 @@
     margin-right: 5px;
 }
 #extended form{
-    /*text-align: right;*/
+   text-align: left;
     /*float: right;*/
     /*width: 400px;*/
 }
