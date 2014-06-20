@@ -6,8 +6,15 @@
     <script>
         function logou()
         {
-            document.getElementById("git").innerHTML="Enter your GIT Repository link: ";
+            var n = document.getElementById("dept").value;
+            alert(n);
+            switch (n)
+            {
+                case "Web designing":
+                    document.getElementById("git").innerHTML="Enter your GIT Repository link: ";
+                    break;
 
+            }
         }
 
 
@@ -47,16 +54,15 @@
         </section>
         <form>
             <br>
-            <select id="dept" >
+            <select id="dept" onclick="logou()" >
                 <option>Select Department</option>
-                <option onclick="logou()">Web designing </option>
+                <option >Web designing</option>
                 <option>Marketing</option>
                 <option>Sales</option>
                 <option>HR department</option>
             </select><br>
-            <!--<p>GIT Repository:-->
             <p id="git"></p>
-            <br><input type="link" id="rep"> <br>
+            <input type="link" id="rep"> <br>
             <input type="button" value="Submit">
         </form>
     </div>
