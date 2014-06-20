@@ -7,13 +7,10 @@
         function logou()
         {
             var n = document.getElementById("dept").value;
-            alert(n);
             switch (n)
             {
                 case "Web designing":
                     document.getElementById("web").style.visibility="visible";
-//                    document.getElementById("git").innerHTML="Enter your GIT Repository link: ";
-
                     break;
                 default:
                     document.getElementById("web").style.visibility="hidden";
@@ -21,14 +18,20 @@
             }
         }
 
+        function logoutSession()
+        {
 
+                location.href = "C:\Users\Rahul\internship\intern project\admin.html";
+
+
+        }
     </script>
 </head>
 
 <body style="background-color: lightcyan;  font-family: 'trebuchet ms'">
 <header >
     <p style=" color: green; width: 90%; float: left">Welcome Intern</p>
-    <input type="button" onclick="lo()" value="Log out" style=" float: left; width: 10%">
+    <input type="button" onclick="logoutSession()" value="Log out" style=" float: left; width: 10%">
     <br>
     <p id="title">Profile </p>
 </header>
