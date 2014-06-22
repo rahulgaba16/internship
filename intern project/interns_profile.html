@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Intern Page</title>
+    <title>Intern Profile</title>
     <link rel="stylesheet" href="styling/style.css">
     <script>
         function logou()
         {
-            document.getElementById("git").innerHTML="Enter your GIT Repository link: ";
-
+            var n = document.getElementById("dept").value;
+            switch (n)
+            {
+                case "Web designing":
+                    document.getElementById("web").style.visibility="visible";
+                    break;
+                default:
+                    document.getElementById("web").style.visibility="hidden";
+                    break;
+            }
         }
     </script>
     <style>
@@ -23,10 +31,10 @@
 
 <body>
 <header >
-    <p style=" width: 90%; float: left">Welcome Intern</p>
+    <p style=" width: 90%; float: left">Welcome Admin</p>
     <input type="button" onclick="lo()" value="Log out" style=" float: left; width: 10%">
     <br>
-    <p id="title">Profile </p>
+    <p id="title">Rahul's Profile </p>
 </header>
 
 
@@ -34,7 +42,7 @@
 <section>
     <form id="basic">
         <table>
-            <tr>Basic Info
+            <tr><h3>Basic Info</h3>
                 <img src="https://www.dropbox.com/s/rm2p26s2ahsf920/29017.jpg?dl=1">
                 <td>Name </td><td><input readonly type="text" id="name" ></td>
             </tr><tr><td>Date of birth </td><td><input readonly type="date"id="dob"></td>
@@ -48,24 +56,24 @@
     </form>
 
     <div id="extended">
-        <p>Extended Info</p>
+        <h3>Extended Info</h3>
         <section id="graph">
-            <p> Performance Gr</p>
+            <p> Performance Graph</p>
         </section>
-
         <form>
             <br>
-            <select id="dept" >
+            <select id="dept" onclick="logou()">
                 <option>Select Department</option>
-                <option onclick="logou()">Web designing </option>
+                <option >Web designing </option>
                 <option>Marketing</option>
                 <option>Sales</option>
                 <option>HR department</option>
             </select><br>
-            <!--<p>GIT Repository:-->
-            <p id="git"></p>
-            <br><input readonly type="link" id="rep"> <br>
-            <input type="button" value="Submit">
+            <section id="web">
+                <p>Enter Your Repository :</p>
+                <input type="link" id="rep"> <br>
+                <input type="button" value="Submit">
+            </section>
         </form>
     </div>
 

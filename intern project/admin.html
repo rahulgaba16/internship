@@ -6,15 +6,21 @@
         #title{
             font-size: 42px;
             text-align: center;
-            background-color: lightseagreen;
-            color: powderblue;
+            background-color: rgba(0,10,0,0.5);
+        }
+        html
+        {
+            color:lightgoldenrodyellow;
+            background: url(styling/back_inner.jpg) no-repeat center center fixed;
+            background-size: cover;
+            font-family: Trebuchet MS, Arial, sans-serif;
         }
     </style>
 </head>
 
-<body style="background-color: lightcyan;  font-family: 'trebuchet ms'">
+<body >
     <header >
-        <p style=" color: green; width: 90%; float: left">Welcome Admin</p>
+        <p style="width: 90%; float: left">Welcome Admin</p>
         <input type="button" value="Log out" style=" float: left; width: 10%">
         <br>
         <p id="title">List of Interns</p>
@@ -35,27 +41,44 @@
     </section>
     <br>
 
-    <section style=" background-color: lightseagreen ;">
+    <section style=" background-color: rgba(0,10,0,0.5) ;">
         <p style="text-align: center"><b>Ordered table</b></p>
         <table border="1" style="font-weight: bold; width: 100% " >
-            <tr>
-                <td>S.no.</td>
-                <td>Name</td>
-                <td>Depart</td>
-                <td>Tops Co</td>
-                <td>Rep</td>
-                <td>Intern ID</td>
-                <td>Password</td>
 
-            </tr>
+                <th>S.no.</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Tops Covered</th>
+                <th>Repository</th>
+                <th>Intern ID</th>
+                <th>Password</th>
+
             <tr>
                 <td>1.</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Rahul Gaba</td>
+                <td>Web Development</td>
+                <td>8/10</td>
+                <td>www.github.com/rahulgaba16/internship</td>
+                <td>1234</td>
+                <td>abcd</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Shubham Sharma</td>
+                <td>Web Development</td>
+                <td>8/10</td>
+                <td>www.github.com/shubhamb/internship</td>
+                <td>2222</td>
+                <td>xyz</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Geet Trivedi</td>
+                <td>Web Development</td>
+                <td>8/10</td>
+                <td>www.github.com/geet.exe/internship</td>
+                <td>1234</td>
+                <td>abcd</td>
             </tr>
         </table></b>
     </section>

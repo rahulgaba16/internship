@@ -16,70 +16,56 @@
                     document.getElementById("web").style.visibility="hidden";
                     break;
             }
-        }
-
-        function logoutSession()
-        {
-
-                location.href = "C:\Users\Rahul\internship\intern project\admin.html";
-
 
         }
     </script>
+    <style>
+        html
+        {
+            color:lightgoldenrodyellow;
+            background: url(styling/back_inner.jpg) no-repeat center center fixed;
+            background-size: cover;
+            font-family: Trebuchet MS, Arial, sans-serif;
+        }
+    </style>
 </head>
 
-<body style="background-color: lightcyan;  font-family: 'trebuchet ms'">
+<body>
 <header >
-    <p style=" color: green; width: 90%; float: left">Welcome Intern</p>
-    <input type="button" onclick="logoutSession()" value="Log out" style=" float: left; width: 10%">
+    <p style=" width: 90%; float: left">Welcome Intern</p>
+    <input type="button" onclick="lo()" value="Log out" style=" float: left; width: 10%">
     <br>
     <p id="title">Profile </p>
 </header>
 
 
 
-<section >
+<section>
     <form id="basic">
-        Basic Info
         <table>
-
-        <tr>
-            <td>
+            <tr><h3>Basic Info</h3>
                 <img src="https://www.dropbox.com/s/rm2p26s2ahsf920/29017.jpg?dl=1">
-            </td>
-            <td>Name </td><td><input type="text" id="name" ></td>
-         </tr>
-            <tr><td>Date of birth </td><td><input type="date"id="dob"></td>
-            </tr>
-            <tr>
-                <td>Skills </td><td><input type="text" id="sk"></td>
-            </tr>
-            <tr>
-                <td>Email </td><td><input type="email"id="email"></td>
-            </tr>
-            <tr>
-                <td>Linkedin Profile </td><td><input type="url"id="linkedin"></td>
-            </tr>
-            <tr>
-                <td>Date of joining</td><td><input type="date"id="doj"></td>
-            </tr>
-            <tr>
-                <td>Duration </td><td><input type="number" id=""></td>
-            </tr>
-
+                <td>Name </td><td><input type="text" id="name" ></td>
+            </tr><tr><td>Date of birth </td><td><input type="date"id="dob"></td>
+        </tr><tr><td>Skills </td><td><input type="text" id="sk"></td>
+        </tr><tr><td>Email </td><td><input type="email"id="email"></td>
+        </tr><tr><td>Linkedin Profile </td><td><input type="url"id="linkedin"></td>
+        </tr><tr><td>Date of joining</td><td><input type="date"id="doj"></td>
+        </tr><tr> <td>Duration </td><td><input type="number" id=""></td>
+        </tr>
         </table>
     </form>
 
     <div id="extended">
-        <p>Extended Info</p>
+        <h3>Extended Info</h3>
         <section id="graph">
             <p> Performance Gr</p>
         </section>
         <form>
             <br>
-            <select id="dept" onclick="logou()" >
+            <select id="dept" onclick="logou()">
                 <option>Select Department</option>
-                <option >Web designing</option>
+                <option >Web designing </option>
                 <option>Marketing</option>
                 <option>Sales</option>
                 <option>HR department</option>
