@@ -17,16 +17,16 @@ img{
     background-color:rgba(0,10,0,0.5);
     margin: 1px;
     padding-left: 5px;
-    height: 500px;
+    height: 450px;
 }
 
 #extended{
     float: left;
     text-align: center;
     padding-left: 5px;
-    width: 402px;
+    width: 511px;
     margin-left: 10px;
-    height: 500px;
+    height: 450px;
     background-color:rgba(0,10,0,0.5);
 }
 #graph{

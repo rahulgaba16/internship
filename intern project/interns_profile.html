@@ -4,7 +4,7 @@
     <title>Intern Profile</title>
     <link rel="stylesheet" href="styling/style.css">
     <script>
-        function logou()
+        function getrep()
         {
             var n = document.getElementById("dept").value;
             switch (n)
@@ -14,8 +14,16 @@
                     break;
                 default:
                     document.getElementById("web").style.visibility="hidden";
+                    document.getElementById("button").style.visibility="visible";
                     break;
+
             }
+
+        }
+        function stype()
+        {
+            var n = document.getElementById("dept").value;
+            alert("repository "+n+" saved.");
         }
     </script>
     <style>
@@ -44,13 +52,14 @@
         <table>
             <tr><h3>Basic Info</h3>
                 <img src="https://www.dropbox.com/s/rm2p26s2ahsf920/29017.jpg?dl=1">
-                <td>Name </td><td><input readonly type="text" id="name" ></td>
-            </tr><tr><td>Date of birth </td><td><input readonly type="date"id="dob"></td>
-        </tr><tr><td>Skills </td><td><input readonly type="text" id="sk"></td>
-        </tr><tr><td>Email </td><td><input readonly type="email"id="email"></td>
-        </tr><tr><td>Linkedin Profile </td><td><input readonly type="url"id="linkedin"></td>
-        </tr><tr><td>Date of joining</td><td><input readonly type="date"id="doj"></td>
-        </tr><tr> <td>Duration </td><td><input readonly type="number" id=""></td>
+                <td>Name </td><td><input type="text" value="Rahul Gaba" id="name" ></td>
+            </tr><tr><td>Date of birth </td><td><input type="date" value="01/16/1993" id="dob"></td>
+        </tr><tr><td>Skills </td><td><input type="text" value="C++, CSS3, HTML" id="sk"></td>
+        </tr><tr><td>Email </td><td><input type="email" value="rahulgaba16@gmail.com" id="email"></td>
+        </tr><tr><td>Linkedin Profile </td><td><input type="url" value="linkedin.com/rahulgaba16" id="linkedin"></td>
+        </tr><tr><td>Date of joining</td><td><input type="date" value="06/16/2014" id="doj"></td>
+        </tr><tr> <td>Duration in months</td><td><input type="number" value="3" id=""></td>
+
         </tr>
         </table>
     </form>
@@ -62,7 +71,7 @@
         </section>
         <form>
             <br>
-            <select id="dept" onclick="logou()">
+            <select id="dept" onclick="getrep()">
                 <option>Select Department</option>
                 <option >Web designing </option>
                 <option>Marketing</option>
@@ -72,7 +81,7 @@
             <section id="web">
                 <p>Enter Your Repository :</p>
                 <input type="link" id="rep"> <br>
-                <input type="button" value="Submit">
+                <input id="button" type="button" value="Submit" onclick="stype()">
             </section>
         </form>
     </div>
