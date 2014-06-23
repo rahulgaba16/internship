@@ -38,14 +38,24 @@
                 if(document.main.name.value=="admin" && document.main.pass.value=="manusis")
                 {
 //                    window.location.assign("http://www.w3schools.com");
-                    window.open("interns_profile.html");
+                    window.close(this);
+                    window.open("admin.html");
+
+
 
                 }
+
                 else
                 {
                     alert("Wrong username or password");
                     return false;
                 }
+            }
+            else
+             if(document.main.occupation[1].checked==true && document.main.name.value=="rahulgaba16" && document.main.pass.value=="abcd")
+            {
+                window.close(this);
+                window.open("intern.html");
             }
             else
             {
