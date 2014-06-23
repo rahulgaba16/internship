@@ -52,7 +52,7 @@
                 }
             }
             else
-             if(document.main.occupation[1].checked==true && document.main.name.value=="rahulgaba16" && document.main.pass.value=="abcd")
+             if(document.main.occupation[1].checked==true && document.main.name.value=="rahulgaba16" && document.main.pass.value=="1234")
             {
                 window.close(this);
                 window.open("intern.html");
@@ -78,10 +78,10 @@
 
 </section>
 <section class="panel">
-    <form name="main" onsubmit="return(validate())">
-        <u>LOGIN PANEL</u><br>
-        <p>User</p><input type="text" name="name">
-        <p>Password</p><input type="password" name="pass"><br>
+    <form name="main" onsubmit="return(validate())" method="post">
+        <u>LOGIN PANEL</u><br><br>
+        User<br><input type="text" name="name">
+        <br>Password<br><input type="password" name="pass"><br>
 
         <br>Login as:
         <input type="radio" name="occupation" value="intern">Admin <input type="radio" name="occupation" value="admin">Intern<br><br>
