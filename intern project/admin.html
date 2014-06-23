@@ -17,12 +17,19 @@
             font-family: Trebuchet MS, Arial, sans-serif;
         }
     </style>
+    <script>
+        function logout(){
+            this.close();
+            window.open("home.html");
+        }
+
+    </script>
 </head>
 
 <body >
     <header >
         <p style="width: 90%; float: left">Welcome Admin</p>
-        <input type="button" value="Log out" style=" float: left; width: 10%">
+        <input type="button" value="Log out" onclick="logout()" style=" float: left; width: 10%">
         <br>
         <p id="title">List of Interns</p>
     </header>
@@ -56,7 +63,7 @@
 
             <tr>
                 <td>1.</td>
-                <td>Rahul Gaba</td>
+                <td><a href="interns_profile.html" style="color: white"> Rahul Gaba </a></td>
                 <td>Web Development</td>
                 <td>8/10</td>
                 <td>www.github.com/rahulgaba16/internship</td>
