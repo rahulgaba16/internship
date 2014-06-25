@@ -62,8 +62,8 @@
                 if(document.main.name.value=="admin" && document.main.pass.value=="manusis")
                 {
 
-                    window.close("Main.html");
-                    window.open("admin.html");
+                    document.main.action = "admin.html?" + document.main.name.value;
+                    window.event.returnValue = true;
 
                 }
                 else
@@ -76,26 +76,22 @@
             {
                 if(document.main.name.value=="rahulgaba16" && document.main.pass.value=="1234")
                 {
-
-                    window.close("Main.html");
-                    window.open("intern.html");
+                    document.main.action = "intern.html?" + document.main.name.value;
+                    window.event.returnValue = true;
 
                 }
                 else
                 if(document.main.name.value=="shubhamb011" && document.main.pass.value=="xyz")
                 {
-
-                    window.close("Main.html");
-                    window.open("intern.html");
-
+                    document.main.action = "intern.html?" + document.main.name.value;
+                    window.event.returnValue = true;
 
                 }
                 else
                 if(document.main.name.value=="geet.exe" && document.main.pass.value=="abcd")
                 {
-                    window.close("Main.html");
-                    window.open("intern.html");
-
+                    document.main.action = "intern.html?" + document.main.name.value;
+                    window.event.returnValue = true;
                 }
                 else
                 {

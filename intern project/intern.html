@@ -13,33 +13,40 @@
                     document.getElementById("web").style.visibility="visible";
                     break;
                 default:
-//                    document.getElementById("web").style.visibility="hidden";
+                    document.getElementById("web").style.visibility="hidden";
                     document.getElementById("button").style.visibility="visible";
                     break;
-
             }
-
         }
         function stype()
         {
             var n = document.getElementById("dept").value;
             alert("repository "+n+" saved.");
         }
+        function logout()
+        {
+            this.close();
+            window.open("home.html");
+        }
+        function loaded()
+        {
+            var get=window.location.href;
+            var getarr= new Array();
+            getarr=get.split("?");
+            //alert(getarr[1]);
+            document.getElementById("nam").innerHTML="Welcome "+getarr[1]+",";
+        }
     </script>
-    <style>
 
-    </style>
 </head>
 
-<body>
+<body onload="loaded()">
 <header >
-    <p style=" width: 90%; float: left">Welcome Intern</p>
-    <input type="button" class="rc-button rc-button-submit" onclick="lo()" value="Log out" style=" float: left; width: 10%">
+    <p style=" width: 90%; float: left"  id="nam"></p>
+    <input type="button" class="rc-button rc-button-submit" onclick="logout()" value="Log out" style=" float: left; width: 10%">
     <br>
     <p id="title">Profile </p>
 </header>
-
-
 
 <section>
     <form id="basic">
@@ -68,7 +75,7 @@
         </section>
         <form>
             <br>
-            <select id="dept" onclick="getrep()">
+            <select id="dept" style="background-color: rgba(0,10,0,0.5); color: lightgoldenrodyellow" onclick="getrep()">
                 <option>Select Department</option>
                 <option >Web designing </option>
                 <option>Marketing</option>
@@ -78,12 +85,12 @@
             <section id="web">
                 <p>Enter Your Repository :</p>
                 <input type="link" id="rep"> <br>
-                <input type="button" value="Submit">
+                <input type="button" class="rc-button rc-button-submit" value="Submit" >
             </section>
         </form>
     </div>
 
 </section>
-<footer>Created by Rahul Gaba.</footer>
+<footer>Copyright &reg Rahul Gaba.</footer>
 </body>
 </html>

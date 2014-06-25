@@ -25,6 +25,12 @@
             var n = document.getElementById("dept").value;
             alert("Department: "+n+" saved.");
         }
+        function logout()
+        {
+            this.close();
+            window.open("home.html");
+        }
+
     </script>
     <style>
 
@@ -34,7 +40,7 @@
 <body>
 <header >
     <p style=" width: 90%; float: left">Welcome Admin</p>
-    <input type="button" class="rc-button rc-button-submit" onclick="lo()" value="Log out" style=" float: left; width: 10%">
+    <input type="button" class="rc-button rc-button-submit" onclick="logout()" value="Log out" style=" float: left; width: 10%">
     <br>
     <p id="title">Rahul's Profile </p>
 </header>
@@ -46,15 +52,20 @@
         <table>
             <tr><h3>Basic Info</h3>
                 <img src="styling/me.jpg">
-                <td>Name </td><td><input type="text" value="Rahul Gaba" id="name" ></td>
-            </tr><tr><td>Date of birth </td><td><input type="date" value="01/16/1993" id="dob"></td>
-        </tr><tr><td>Skills </td><td><input type="text" value="C++, CSS3, HTML" id="sk"></td>
-        </tr><tr><td>Email </td><td><input type="email" value="rahulgaba16@gmail.com" id="email"></td>
-        </tr><tr><td>Linkedin Profile </td><td><input type="url" value="linkedin.com/rahulgaba16" id="linkedin"></td>
-        </tr><tr><td>Date of joining</td><td><input type="date" value="06/16/2014" id="doj"></td>
-        </tr><tr> <td>Duration in months</td><td><input type="number" value="3" id=""></td>
-
-        </tr>
+                <td>Name </td><td><input type="text" value="Rahul Gaba" readonly id="name" ></td>
+            </tr>
+            <tr><td>Date of birth </td><td><input type="date" readonly value="01/16/1993" id="dob"></td>
+            </tr>
+            <tr><td>Skills </td><td><input type="text" value="C++, CSS3, HTML" readonly id="sk"></td>
+            </tr>
+            <tr><td>Email </td><td><input type="email" value="rahulgaba16@gmail.com" readonly id="email"></td>
+            </tr>
+            <tr><td>Linkedin Profile </td><td><input type="url" value="linkedin.com/rahulgaba16" readonly id="linkedin"></td>
+            </tr>
+            <tr><td>Date of joining</td><td><input type="date" value="06/16/2014" readonly id="doj"></td>
+            </tr>
+            <tr> <td>Duration in months</td><td><input type="number" value="3" readonly id=""></td>
+            </tr>
         </table>
     </form>
 
@@ -65,7 +76,7 @@
         </section>
         <form>
             <br>
-            <select id="dept" onclick="getrep()">
+            <select id="dept" style="background-color: rgba(0,10,0,0.5); color: lightgoldenrodyellow" onclick="getrep()">
                 <option>Select Department</option>
                 <option >Web designing </option>
                 <option>Marketing</option>
@@ -81,6 +92,6 @@
     </div>
 
 </section>
-<footer>Created by Rahul Gaba.</footer>
+<footer>Copyright &reg Rahul Gaba.</footer>
 </body>
 </html>
